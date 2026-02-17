@@ -2,6 +2,9 @@
 
 A foobar2000 component that provides a real-time DSP monitoring dashboard. Visualizes CPU usage per DSP node and offers one-click enable/disable toggles.
 
+<img width="620" height="191" alt="foo_dsp_health" src="https://github.com/user-attachments/assets/23adf50c-b3fd-4d8f-90f8-78d805249676" />
+
+
 ## Features
 
 - **Per-DSP CPU monitoring** - See how much processing time each DSP in your chain consumes, expressed as a percentage of real-time (100% = can't keep up)
