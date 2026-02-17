@@ -9,7 +9,7 @@ A foobar2000 component that provides a real-time DSP monitoring dashboard. Visua
 
 - **Per-DSP CPU monitoring** - See how much processing time each DSP in your chain consumes, expressed as a percentage of real-time (100% = can't keep up)
 - **Color-coded CPU bars** - Green (<50%), yellow (50-80%), red (>80%)
-- **One-click toggles** - Enable/disable individual DSPs directly from the panel (they remain in the list with a hollow circle when disabled, and their preset settings are preserved)
+- **One-click toggles** - Enable/disable individual DSPs directly from the panel
 - **DSP configuration** - Click the three-dot button next to a DSP name to open its configuration dialog
 - **Dark mode support** - Automatically matches foobar2000's theme
 - **Dockable panel** - Standard ui_element that can be placed anywhere in your layout
