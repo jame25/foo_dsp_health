@@ -80,6 +80,7 @@ foo_dsp_health/
 This component patches `lib/foobar2000_SDK/foobar2000/SDK/dsp_manager.h/.cpp` to add per-node `QueryPerformanceCounter` timing around each DSP's `run()` call. The patch adds a `node_timing_t` struct and public accessors while preserving the existing API.
 
 ## License
+MIT
 
 ## Support Development
 
@@ -108,5 +109,3 @@ Your support helps cover development time and enables new features. Thank you! ð
 ---
 
 **Feature Requests:** Paid feature requests are available for supporters. [Contact me on Telegram](https://t.me/jame25) to discuss.
-
-MIT
