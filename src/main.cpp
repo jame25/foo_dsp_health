@@ -2,7 +2,7 @@
 
 DECLARE_COMPONENT_VERSION(
     "DSP Health Monitor",
-    "0.1.0",
+    "0.1.1",
     "Real-time DSP chain CPU monitoring dashboard.\n"
     "Visualizes per-DSP-node CPU usage,\n"
     "and provides one-click enable/disable toggles.\n\n"
