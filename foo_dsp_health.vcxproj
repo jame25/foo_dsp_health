@@ -80,7 +80,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
-      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include;lib/columns_ui</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -102,7 +102,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
-      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include;lib/columns_ui</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
@@ -125,7 +125,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <StringPooling>true</StringPooling>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include;lib/columns_ui</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <PreprocessorDefinitions>NDEBUG;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -152,7 +152,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <StringPooling>true</StringPooling>
       <OmitFramePointers>true</OmitFramePointers>
-      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;lib/foobar2000_SDK/foobar2000;lib/foobar2000_SDK;lib/WTL/Include;lib/columns_ui</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <PreprocessorDefinitions>NDEBUG;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -177,6 +177,12 @@
     <ClCompile Include="src\dsp_monitor.cpp" />
     <ClCompile Include="src\dsp_chain_model.cpp" />
     <ClCompile Include="src\ui_health_panel.cpp" />
+    <ClCompile Include="src\cui_health_panel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\stdafx.h" />
@@ -185,6 +191,8 @@
     <ClInclude Include="src\dsp_monitor.h" />
     <ClInclude Include="src\dsp_chain_model.h" />
     <ClInclude Include="src\ui_health_panel.h" />
+    <ClInclude Include="src\health_panel_theme.h" />
+    <ClInclude Include="src\cui_health_panel.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="foo_dsp_health.rc" />
@@ -204,6 +212,9 @@
     </ProjectReference>
     <ProjectReference Include="lib\foobar2000_SDK\foobar2000\SDK\foobar2000_SDK.vcxproj">
       <Project>{e8091321-d79d-4575-86ef-064ea1a4a20d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="lib\columns_ui\columns_ui-sdk\columns_ui-sdk-public.vcxproj">
+      <Project>{93ec0ede-01cd-4fb0-b8e8-4f2a027e026e}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
